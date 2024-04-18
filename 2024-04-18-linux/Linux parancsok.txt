@@ -1,0 +1,21 @@
+ls - kiírja hogy ahol vagyok milyen fájlok, egyéb más alkalmazások vannak
+ls -l - long listing ( ls -l /usr/bin/perl )
+ls -r - reverse
+ls -lr - long és reverse egyszerre
+ls -h - human readable option
+date - dátum
+history - eddig milyen parancsokat adtam meg
+cal - naptár (calendar)
+!! - legutóbbi parancs futattása
+!-n - ! kötőjel után egy szám és ahanyadik legutóbbit fogja lefuttatni
+variable1='valami' - egy változóban eltárol egy adatot
+echo $variable1 - azt kiírja amit a variable1 változóban eltároltam
+env - környezeti változók kilistázása, érdemes az Alt Gr + W (|) használni, utána a változó nevét beírni
+export - arra használjuk, hogy egy helyi változót környezeti változóvá alakítsunk
+	Amit kiír:
+		sysadmin@localhost:~$ export variable1
+		sysadmin@localhost:~$ env | grep variable1
+		variable1=valami
+unset - exportált változók eltávolítása
+echo $PATH - kiírja a könyvtárat
+PATH=/usr/bin/custom:$PATH - PATH beállítása
